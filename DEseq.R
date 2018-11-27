@@ -5,7 +5,7 @@ library("DESeq2")
 # Import data from featureCounts
 ## Previously ran at command line something like this:
 ## featureCounts -a genes.gtf -o counts.txt -T 12 -t exon -g gene_id GSM*.sam
-# countdata <- read.table("static_clustering_ATH_7_08_17_DESEQ.txt", header=TRUE, row.names=1)
+# countdata <- read.table("static_clustering.txt", header=TRUE, row.names=1)
 countdata <- read.table("ExpressionTable_DESEQ.txt", header=TRUE, row.names=1)
 
 # Create a countdata for each sample comparison. Used ceiling becuase some number are not intengers to round these numbers.
